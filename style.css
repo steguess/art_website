@@ -1,0 +1,117 @@
+:root {
+    --primary: #eb0e3e;               /* Primary color for highlights */
+    --primaryLight: #e3a6f3;          /* Lighter shade of primary color */
+    --secondary: #f365e4;             /* Secondary color */
+    --secondaryLight: #fd6fe8;        /* Lighter shade of secondary color */
+    --headerColor: #1a1a1a;           /* Color for headers */
+    --bodyTextColor: #4e4b66;         /* Main text color */
+    --bodyTextColorWhite: #ffffff;    /* White text color */
+    --topperFontSize: 1rem;           /* Font size for topper */
+    --headerFontSize: 2.5rem;         /* Font size for headers */
+    --bodyFontSize: 1rem;             /* Font size for body text */
+    --sectionPadding: 2rem;           /* Padding for sections */
+}
+
+body {
+    margin: 0;
+    padding: 0;§
+    font-family: 'Arial', sans-serif; /* Default fon§t family */
+    background-color: #f4f4f4;        /* Light background for the page */
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.cs-container {
+    max-width: 1200px;                /* Max width for the content container */
+    margin: auto;                     /* Center the container horizontally */
+    padding: 2rem;                    /* Padding around the content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;              /* Center align the items */
+}
+
+.cs-topper {
+    font-size: var(--topperFontSize);
+    color: var(--primary);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.cs-title {
+    font-size: var(--headerFontSize);
+    color: var(--headerColor);
+    margin-bottom: 1rem;
+    text-align: center;               /* Center the title text */
+}
+
+.cs-text {
+    font-size: var(--bodyFontSize);
+    color: var(--bodyTextColor);
+    text-align: center;               /* Center the description text */
+    margin-bottom: 2rem;              /* Spacing before the list starts */
+}
+
+.cs-card-group {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Change this line */
+    gap: 1rem;
+    width: 100%;
+}
+
+
+.cs-item {
+    background-color: #000;
+    color: var(--bodyTextColorWhite);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;              /* Center the text in the card */
+    height: 300px;                    /* Fixed height for all items */
+    position: relative;
+    overflow: hidden;                 /* Ensures images don't overflow */
+}
+
+.cs-link {
+    text-decoration: none;
+    color: inherit;                   /* Inherits color from parent */
+    display: flex;
+    align-items: center;              /* Center alignment for link contents */
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.cs-number {
+    font-size: 3rem;                  /* Larger font size for numbers */
+    font-weight: bold;
+    position: absolute;
+    top: 10px;                        /* Position at the top of the container */
+    left: 10px;                       /* Position from the left */
+    color: var(--primaryLight);       /* Color for the numbers */
+}
+
+.cs-h3 {
+    font-size: 1.5rem;                /* Font size for headings in cards */
+    text-align: center;               /* Center align headings */
+    color: var(--bodyTextColorWhite);
+    width: 100%;                      /* Full width to center align easily */
+    position: absolute;
+    bottom: 10px;                     /* Positioned at the bottom */
+    left: 0;                          /* Align left edge to container */
+}
+
+.cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cs-item:hover .cs-picture img {
+    transform: scale(1.1);            /* Slight zoom on hover */
+}
