@@ -1,3 +1,7 @@
+# Webpage - HMTL & CSS
+
+![Example Image](Final.png)
+
 # Art and Love Gallery 🎨
 Welcome to the Art and Love Gallery project! This repository contains the code for a dynamic webpage showcasing a curated collection of both classic and contemporary art pieces. Our goal is to provide art enthusiasts with a visually engaging platform to explore and appreciate the greatest pieces in art.
 
