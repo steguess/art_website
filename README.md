@@ -13,14 +13,10 @@ Interactive UI: 🔍 Users can interact with the art pieces, getting details abo
 # Technologies Used 🔧
 HTML5: For structuring the content.
 CSS3: For styling, utilizing Grid and Flexbox for responsive layouts.
-JavaScript: (Optional) For interactive elements.
-Getting Started 🌟
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
 
 # Prerequisites 📋
 What things you need to install the software and how to install them:
-
-Code kopieren
 No prerequisites needed if just using HTML and CSS.
 
 Modify the HTML and CSS files as needed.
